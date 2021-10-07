@@ -62,6 +62,10 @@ public class Catalogo implements Serializable{
         this.livros.add(obj);
     }
     
+    public void removerLivro(int index){
+        this.livros.remove(index);
+    }
+    
     public Integer getId() {
         return id;
     }

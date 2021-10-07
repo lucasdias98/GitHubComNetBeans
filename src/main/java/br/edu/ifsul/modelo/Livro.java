@@ -152,5 +152,4 @@ public class Livro extends LivroBasico{
         this.catalogo = catalogo;
     }
     
-    
 }
