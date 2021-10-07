@@ -23,11 +23,11 @@ public class TestePersistirUsuario {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("TrabalhoPWPU");
         EntityManager em = emf.createEntityManager();
         Usuario u = new Usuario();
-        u.setNomeUsuario("lucasdias");
-        u.setSenha("obrabo");
+        u.setNomeUsuario("cj");
+        u.setSenha("sjay");
         u.setAtivo(true);
-        u.setEmail("lucasdias@gmail.com");        
-        u.setNome("Lucas Dias");        
+        u.setEmail("cj@gmail.com");        
+        u.setNome("Carl Jhonson");        
         em.getTransaction().begin();
         em.persist(u);        
         em.getTransaction().commit();

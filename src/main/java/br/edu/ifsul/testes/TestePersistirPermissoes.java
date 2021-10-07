@@ -18,10 +18,10 @@ public class TestePersistirPermissoes {
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("TrabalhoPWPU");
         EntityManager em = emf.createEntityManager();
-        Usuario u = em.find(Usuario.class, "lucasdias");
-        Permissao p1 = em.find(Permissao.class, "ADMINISTRADOR");
+        Usuario u = em.find(Usuario.class, "cj");
+        //Permissao p1 = em.find(Permissao.class, "ADMINISTRADOR");
         Permissao p2 = em.find(Permissao.class, "USUARIO");
-        u.getPermissoes().add(p1);
+        //u.getPermissoes().add(p1);
         u.getPermissoes().add(p2);
         em.getTransaction().begin();
         em.merge(u);        
